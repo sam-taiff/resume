@@ -7,6 +7,10 @@ RUN sudo apt-get update && sudo apt-get install -y texlive \
     poppler-utils \
     texlive-xetex
 
+# Install python + python packages that I use for normal development
+RUN apt-get install -y python3 python3-pip
+RUN pip3 install --break-system-packages thefuck pre-commit
+
 # Set the shell to zsh
 RUN chsh -s /bin/zsh
 SHELL ["/bin/zsh", "-c"]
