@@ -14,7 +14,13 @@
 				"ms-azuretools.vscode-docker",
 				"DavidAnson.vscode-markdownlint",
 				"jkiviluoto.tws",
-				"stkb.rewrap"
+				"stkb.rewrap",
+				"chang196700.newline",
+				"Gruntfuggly.todo-tree",
+				"redhat.vscode-yaml",
+				"eamodio.gitlens",
+				"github.vscode-github-actions",
+				"fill-labs.dependi"
 			]
 		}
 	},
