@@ -1,4 +1,4 @@
-FROM ghcr.io/josiahbull/dotfiles:main
+FROM ghcr.io/josiahbull/dotfiles:latest
 
 # Install everything reuqired to build the resume.
 RUN sudo apt-get update && sudo apt-get install -y texlive \

@@ -4,7 +4,7 @@
 	"name": "Resume",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"context": ".."
+		"context": "."
 	},
 	"customizations": {
 		"vscode": {
