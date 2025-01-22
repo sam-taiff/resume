@@ -1,0 +1,14 @@
+resume.*
+coverletter.*
+*.png
+
+*.aux
+*.fls
+*.log
+*.pdf
+*.fdb_latexmk
+*.xdv
+*.gz
+
+!resume.tex
+!coverletter.tex

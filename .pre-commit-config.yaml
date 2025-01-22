@@ -1,0 +1,37 @@
+repos:
+  - repo: https://github.com/jonasbb/pre-commit-latex-hooks
+    rev: v1.4.3
+    hooks:
+      - id: american-eg-ie
+      - id: cleveref-capitalization
+      - id: consistent-spelling
+        args:
+            [
+              "--emph=et al.",
+              "--emph=a priori",
+              "--emph=a posteriori",
+              '--regex=naive=\bna(i|\\"i)ve',
+            ]
+      - id: csquotes
+      - id: ensure-labels-for-sections
+      - id: no-space-in-cite
+      - id: tilde-cite
+      - id: unique-labels
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: debug-statements
+      - id: detect-private-key
+      - id: mixed-line-ending
+      - id: pretty-format-json
+        args: ["--autofix"]
+        exclude: ".devcontainer/devcontainer.json"
+      - id: requirements-txt-fixer
+      - id: check-case-conflict
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: check-merge-conflict
+        files: ".*\\.(?:tex|py)$"
